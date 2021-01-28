@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/images/cityIcon2.png" sizes="16x16">
+  <link rel="stylesheet" href="cities.css">
+  <title>The Cities Service</title>
+</head>
+
+<body>
+  <header>
+    <h1>The Cities Service</h1>
+  </header>
+
+  <section class="intro-text">
+    <h2>Welcome to The Cities Service!</h2>
+    <p>This service exists to try to get a VG grade for Ann :)</p>
+    <h2>How to use the service</h2>
+    <p>Click on "View cities" to <strong>view</strong> the current list of cities.</p>
+    <p>
+      To <strong>add</strong> a city to the list, enter a city ID, a city name and a population,
+      choose "Add city" from the dropdown menu and click "Submit". If you don't enter an ID, one
+      will be created for you.
+    </p>
+    <p>
+      To <strong>edit</strong> a city, choose "Edit city" from the dropdown menu, enter the ID of
+      the city you wish to edit, enter the information you'd like to change and click "Submit".
+    </p>
+    <p>
+      To <strong>delete</strong> a city, choose "Delete city" from the dropdown menu, enter the ID
+      of the city you wish to delete and click "Submit"
+    </p>
+    <p>Click on "View Cities" at any time to see the updated list of cities</p>
+  </section>
+
+  <div class="form-container">
+    <form action="#" id="cityForm">
+      <fieldset>
+        <legend>Cities</legend>
+        <label for="city-id">City ID</label>
+        <input type="text" autocomplete="off" name="city-id" id="city-id">
+        <label for="city-name">City name</label>
+        <input type="text" autocomplete="off" name="city-name" id="city-name">
+        <label for="population">Population</label>
+        <input type="text" autocomplete="off" name="population" id="population">
+
+        <select name="options" id="options">
+          <option selected value="add-city">Add city</option>
+          <option value="edit-city">Edit city</option>
+          <option value="delete">Delete city</option>
+        </select>
+
+        <input type="button" id="viewButton" value="View Cities">
+        <input type="button" id="resetButton" value="Reset Form">
+        <label for="submit"></label>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </div>
+ 
+  <div id="display-results"></div>
+
+  <script src="cities.js"></script>
+</body>
+
+</html>
