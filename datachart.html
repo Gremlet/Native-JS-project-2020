@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto&family=Rye&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="/images/cocktailIcon.png" sizes="16x16" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Hello Happy Hour | Data Is Fun</title>
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Roboto&family=Rye&display=swap"
-    rel="stylesheet">
-  <link rel="icon" type="image/png" href="/images/cocktailIcon.png" sizes="16x16">
-  <link rel="stylesheet" href="style.css">
-  <title>Hello Happy Hour | Data Is Fun</title>
-</head>
+    <body>
+        <div class="bg-image">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="random.html">Cocktail randomiser</a></li>
+                    <li><a href="datachart.html">Data</a></li>
+                </ul>
+            </nav>
 
-<body>
-  <div class="bg-image">
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="random.html">Cocktail randomiser</a></li>
-        <li><a href="datachart.html">Data</a></li>
-      </ul>
-    </nav>
+            <section id="opening-content-container">
+                <img id="logo" src="images/CocktailLogo.png" alt="Hello Happy Hour logo" />
+                <div id="dataText">
+                    <h1>Who's drinking all the cocktails?</h1>
+                    <p>
+                        Do Swedes like a sip, do Finns live for Fridays? Find out who in the Nordics
+                        loves a tipple. Click <span id="chartClick">HERE</span> to see who's
+                        drinking all the cocktails!
+                    </p>
+                </div>
+            </section>
+        </div>
 
-    <section id="opening-content-container">
-      <img id="logo" src="images/CocktailLogo.png" alt="Hello Happy Hour logo">
-      <div id="dataText">
-        <h1>Who's drinking all the cocktails?</h1>
-        <p>
-          Do Swedes like a sip, do Finns live for Fridays? Find out who in the
-          Nordics loves a tipple. Click <span id="chartClick">HERE</span> to
-          see who's drinking all the cocktails!
-        </p>
-      </div>
-    </section>
-  </div>
+        <div
+            class="chart"
+            id="chart"
+            style="margin: auto; position: relative; height: 80vh; width: 80vw"
+        >
+            <canvas id="alcoholConsumption"></canvas>
+        </div>
 
-  <div class="chart" id="chart" style="margin: auto; position: relative; height: 80vh; width: 80vw">
-    <canvas id="alcoholConsumption"></canvas>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"></script>
-  <script src="datachart.js"></script>
-</body>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"></script>
+        <script src="datachart.js"></script>
+    </body>
 </html>
